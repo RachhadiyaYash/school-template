@@ -23,7 +23,7 @@ export default function Faqs() {
       <p className="mx-auto md:w-2/3 w-full font-semibold text-gray-700 mb-8">
         Find all the essential information you need in our FAQ section, designed
         to address the most frequently asked questions and help you make
-        informed decisions for your child's education.
+        informed decisions for your child&apos;s education.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
