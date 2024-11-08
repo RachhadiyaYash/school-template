@@ -5,7 +5,7 @@ import Headingbadge from "./Headingbadge";
 import { faqData } from "@/Data/faqData";
 
 export default function Faqs() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState(faqData[0].id); // Set the default open FAQ
 
   const toggleFaq = (id) => {
     setOpenFaq(openFaq === id ? null : id);
@@ -32,7 +32,7 @@ export default function Faqs() {
             <div
               key={faq.id}
               className={`cursor-pointer p-4 border border-black rounded-md transition-all duration-300 ease-in-out transform ${
-                openFaq === faq.id ? "bg-white" : "bg-orange-95"
+                openFaq === faq.id ? "bg-absoluteWhite" : "bg-orange-95"
               } hover:shadow-lg hover:border-gray-400`}
             >
               <div
@@ -76,7 +76,7 @@ export default function Faqs() {
             <div
               key={faq.id}
               className={`cursor-pointer p-4 border border-black rounded-md transition-all duration-300 ease-in-out transform ${
-                openFaq === faq.id ? "bg-white" : "bg-orange-95"
+                openFaq === faq.id ? "bg-absoluteWhite" : "bg-orange-95"
               } hover:shadow-lg hover:border-gray-400`}
             >
               <div

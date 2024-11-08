@@ -1,4 +1,4 @@
-// data/benefitsData.js
+
 export const benefitsData = [
     {
         id: 1,
